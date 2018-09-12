@@ -6,8 +6,10 @@ The frontend is made with [chat-bubble](https://github.com/dmitrizzle/chat-bubbl
 
 The conversation is based on a struct named passosFerias (vacation steps in portuguese). For every step there is a boolean property which is set to true after each step is compleated.
 
-Every message received by the backend is sanitizes and lowercased.
+Every message received by the backend is [sanitized](https://github.com/kennygrant/sanitize) and lowercased.
 
-The system requires no persistent data store.  All storage is done in a map data strcuture(as implemented by Go).
+The system requires no persistent data store.  All storage is done in a map data strcuture(as implemented by Go). 
+
+The frontend sends an identification of the user in the Headers.
 
 
