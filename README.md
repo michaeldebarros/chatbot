@@ -10,6 +10,6 @@ Every message received by the backend is [sanitized](https://github.com/kennygra
 
 The system requires no persistent data store.  All storage is done in a map data strcuture(as implemented by Go). 
 
-The frontend sends an identification of the user in the Headers.
+The frontend sends an identification of the user in the Headers, this way is possible to verify if there is an ongoing vacation booking and in what step it is.
 
 
